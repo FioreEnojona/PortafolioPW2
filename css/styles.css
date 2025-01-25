@@ -30,6 +30,7 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 2rem;
 }
 
 header {
@@ -146,11 +147,6 @@ footer nav ul li a {
 
 
 
-
-
-
-
-/* Contacto */
 
 /* Contacto */
 .contacto {
@@ -321,61 +317,6 @@ footer nav ul li a {
     line-height: 1.8rem;
 }
 
-/* Estilos para la sección de proyectos */
-.proyectos {
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-.proyectos h2 {
-    font-size: 3rem;
-    font-family: 'Cooper Hewitt';
-    color: var(--white);
-    margin-bottom: 2rem;
-}
-
-/* Contenedor de los proyectos (hace que los cards estén alineados horizontalmente) */
-.cardcontainer {
-    display: flex;
-    justify-content: space-between;  /* Espaciado entre los cards */
-    flex-wrap: wrap; /* Permite que los cards se ajusten si el ancho de pantalla es pequeño */
-    gap: 2rem;  /* Espacio entre los cards */
-    margin-bottom: 2rem;
-}
-
-/* Estilos para cada tarjeta de proyecto */
-.cardcontainer a {
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    width: calc(50% - 1rem); /* Asegura que cada card ocupe el 50% del contenedor, con espacio entre ellos */
-    max-width: 500px;  /* Limita el tamaño máximo de cada tarjeta */
-}
-
-.cardcontainer button {
-    display: block;
-    width: 100%;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    cursor: pointer;
-}
-
-.cardcontainer img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;  /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
-}
-
-/* Estilo para el texto del título del proyecto */
-.cardcontainer h3 {
-    font-family: 'PT Sans', sans-serif;
-    color: var(--white);
-    margin-top: 1rem;
-    font-size: 1.6rem;
-    letter-spacing: 0.05rem;
-}
-
-
 /* Animaciones para la imagen */
 @keyframes image {
     0% {
@@ -391,6 +332,52 @@ footer nav ul li a {
     animation: image 2s ease-in-out;
 }
 
+/* Contenedor de los proyectos */
+.proyectos {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+}
+
+/* Ajustar el contenedor de las tarjetas para centrarlas en columna */
+.cardcontainer {
+    display: flex; /* Usamos flex para controlar el diseño */
+    flex-direction: column; /* Alineamos las tarjetas en columna */
+    align-items: center; /* Centra las tarjetas horizontalmente */
+    margin-top: 1rem;
+}
+
+/* Ajustes a cada tarjeta dentro del contenedor */
+.cardcontainer a {
+    text-decoration: none;
+    width: 100%; /* Cada tarjeta ocupa el 100% del contenedor */
+    max-width: 500px; /* Limita el tamaño máximo de cada tarjeta */
+    box-sizing: border-box; /* Asegura que el padding y margin no afecten el tamaño total */
+}
+
+/* Estilos de los botones dentro de las tarjetas */
+.cardcontainer button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.cardcontainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de las tarjetas */
+.cardcontainer h3 {
+    margin-top: 0.2rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+}
 
 
 
