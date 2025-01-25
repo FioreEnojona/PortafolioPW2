@@ -10,12 +10,28 @@ body {
     min-height: 100vh; 
     margin: 0px;
     padding: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #1e1e1e	;
+    font-family: 'Cooper Hewitt';
+    background-color: #252424	;
     color: #737070	;
     margin-top: 60px;
 
 }
+
+p{
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+}
+
+
+h2{
+    font-size: 2rem;
+    color: rgb(88, 88, 88);
+    text-align: center;
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -28,6 +44,7 @@ header {
     z-index: 1000; /* Asegurarse de que esté encima de otros elementos */
     background-color: #111111	;
     padding-top: 10px; /* Ajuste fino para evitar desplazamientos no deseados */
+    font-size: 2rem;
 
 }
 
@@ -35,9 +52,9 @@ header img {
     height: 50px;
 }
 
+
 /* Botón del menú hamburguesa */
 .menu-toggle {
-    font-size: 1.8rem;
     background: none;
     border: none;
     cursor: pointer;
@@ -120,6 +137,210 @@ footer nav ul li a {
     padding: 0.5rem 0.8rem;
     transition: background-color 1s ease, color 1s ease;
 }
+
+
+
+
+
+
+/* Contacto */
+
+.contacto {
+    width: 100%;
+    height: auto;
+    padding: 0 2rem 5rem 2rem;
+}
+
+/* Titulo de la sección Contacto */
+.contacto h1 {
+    display: block;
+    text-align: center;
+    font-size: 2.4rem;
+    letter-spacing: .1rem;
+    padding: 6rem 0 4rem 0;
+}
+
+/* Contenedor principal de contacto */
+.container--contacto {
+    width: 100%;
+    background-color: blue;
+    border-radius: 24px;
+    padding: 3rem;
+    position: relative;
+}
+
+/* Texto dentro del contenedor */
+.container_text--contacto p {
+    font-size: 1.6rem;
+    font-family: 'Cooper Hewitt';
+    color: var(--white);
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+    line-height: 2.3rem;
+}
+
+/* Estilo de los campos de input */
+.formcontacto input {
+    font-family: 'Cooper Hewitt';
+    background: transparent;
+    border: 1px solid lightcoral;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: magenta;
+    font-size: 1.6rem;
+    outline: none;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.formcontacto input::placeholder {
+    color: var(--light-grey);
+}
+
+.formcontacto .input-invalid {
+    border: 1px solid #574438;
+    color: #574438;
+}
+
+/* Estilo de la caja de texto */
+.formcontacto textarea {
+    background: transparent;
+    border: 1px solid purple;
+    font-family: 'Cooper Hewitt';
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: pink;
+    font-size: 1.6rem;
+    outline: none;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+    resize: none;
+}
+
+.formcontacto textarea::placeholder {
+    color: lawngreen;
+}
+
+.formcontacto textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+.formcontacto textarea::-webkit-scrollbar-track {
+    background-color: #776254;
+}
+
+.formcontacto textarea::-webkit-scrollbar-thumb {
+    background-color: #574438;
+}
+
+/* Estilo del botón del formulario */
+.btncontacto {
+    display: flex;
+    justify-content: center;
+}
+
+.btncontacto button {
+    background: #776254;
+    border: none;
+    width: 20rem;
+    padding: .8rem 1rem;
+    border-radius: 1rem;
+    color: var(--white);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.btncontacto button:hover {
+    background: #776254;
+    color: var(--black);
+    font-weight: bold;
+    transform: scale(1.1);
+    box-shadow: 0px 9px 15px -1px rgba(0,0,0,0.20);
+    transition: all .4s ease;
+}
+
+.btncontacto button:active {
+    background: #574438;
+}
+
+
+
+
+
+
+/* Inicio */
+.Inicio {
+    width: 100%;
+    height: auto;
+}
+
+.slider {
+    width: 100%;
+    height: auto;
+}
+
+.frametrack {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    transition: 0.4s;
+}
+
+.Inicio h1 {
+    font-family: 'Cooper Hewitt';
+    color: var(--white);
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.profesiontitulo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profesiontitulo p {
+    font-size: 2rem;
+}
+
+.saludo {
+    text-align: center;
+    margin-top: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.saludo p {
+    color: var(--white);
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.8rem;
+}
+
+/* Animaciones para la imagen */
+@keyframes image {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.slide img {
+    animation: image 2s ease-in-out;
+}
+
 
 
 @media (min-width: 720px) {
