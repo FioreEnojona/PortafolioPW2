@@ -14,9 +14,9 @@
             <ul>
                 <img src="" alt="Logo Portafolio" class="logo__header">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#">Sobre Mi</a></li>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#sobremi">Sobre Mi</a></li>
+                <li><a href="#proyectos">Portafolio</a></li>
+                <li><a href="#form">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -58,7 +58,7 @@
             </div>
         </section>
     </section>
-    <section class="sobremi">
+    <section class="sobremi" id="sobremi">
         <h2>Sobre mi</h2>
         <section>
             <div class="habilidades">
@@ -124,7 +124,52 @@
             </div>
         </section>
     </section>
+    <section class="proyectos" id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="cardcontainer">
+            <a href="https://mariasmoun.github.io/Juego-del-Ahorcado/" target="_blank">
+                <button class="btn_demo">
+                    <img src="./assets/images/icon-demoProyecto.png" alt="Demostración">DEMO
+                </button>
+            </a>
+        </div>
+        <div class="cardcontainer">
+            <a href="https://mariasmoun.github.io/Juego-del-Ahorcado/" target="_blank">
+                <button class="btn_demo">
+                    <img src="./assets/images/icon-demoProyecto.png" alt="Demostración">DEMO
+                </button>
+            </a>
+        </div><div class="cardcontainer">
+            <a href="https://mariasmoun.github.io/Juego-del-Ahorcado/" target="_blank">
+                <button class="btn_demo">
+                    <img src="./assets/images/icon-demoProyecto.png" alt="Demostración">DEMO
+                </button>
+            </a>
+        </div>
+    </section>
+    <section class="contacto" id="contacto">
+        <h1 data-section="contacto" data-value="title" data-aos="fade-up">Contacto</h1>
 
+        <div class="container_box--contacto" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+
+            <div class="container--contacto">
+                <div class="container_text--contacto">
+                    <p data-section="contacto" data-value="text">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
+                </div>
+
+                <form id="form" class="formcontacto" name="contactoportafolio" netlify>
+                    <input id="nombre" type="text" name="name" placeholder="Nombre" required>
+                    <input id="email" type="email" name="email" placeholder="E-mail" required>
+                    <input id="asunto" type="text" name="affair" placeholder="Asunto" required>
+                    <textarea id="mensaje" cols="20" rows="4" name="message" placeholder="Mensaje" required></textarea>
+
+                    <div class="btncontacto">
+                        <button id="btnenviar" type="submit" data-section="contacto" data-value="btnenviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 <footer>
     &copy; Derechos Reservados 2024 &#8482; UNICAH &#160;
