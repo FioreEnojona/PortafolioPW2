@@ -7,28 +7,28 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
     margin: 0px;
     padding: 0px;
     font-family: 'Cooper Hewitt';
-    background-color: #252424	;
-    color: #737070	;
+    background-color: #252424;
+    color: #737070;
     margin-top: 60px;
 
 }
 
-p{
+p {
     font-size: 1.6rem;
     letter-spacing: 0.2rem;
+
 }
-
-
-h2{
+    
+h2 {
     font-size: 2rem;
     color: rgb(88, 88, 88);
     text-align: center;
-    width: 100%; 
-    display: flex; 
+    width: 100%;
+    display: flex;
     justify-content: center;
 }
 
@@ -37,14 +37,17 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Fijar el menú en la parte superior */
-    top: 0; /* Asegurarse de que esté en la parte superior */
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 100%; /* Asegurarse de que ocupe todo el ancho */
-    z-index: 1000; /* Asegurarse de que esté encima de otros elementos */
-    background-color: #111111	;
-    padding-top: 10px; /* Ajuste fino para evitar desplazamientos no deseados */
-    font-size: 2rem;
+    width: 100%;
+    z-index: 1000;
+    background-color: #111111;
+    padding-top: 10px;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Cooper Hewitt';
+    color: #737070;
 
 }
 
@@ -58,14 +61,15 @@ header img {
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 1000; /* Asegurarse de que esté encima de otros elementos */
-    color:#3c3c3c	;
+    z-index: 1000;
+    color: #3c3c3c;
 
 }
 
 /* Menú inicial oculto */
 nav.menu {
-    display: none; /* Ocultar por defecto */
+    display: none;
+    /* Ocultar por defecto */
     position: absolute;
     top: 70px;
     right: 20px;
@@ -92,23 +96,25 @@ nav.menu ul li {
 
 nav.menu ul li a {
     text-decoration: none;
-    color: #737070	;
+    color: #737070;
     padding: 10px 15px;
     display: block;
     transition: background-color 0.3s ease;
+    
 }
 
 nav.menu ul li a:hover {
     background-color: #4d4d4d;
-    color:#111111;	
+    color: #111111;
 }
+
 footer {
     width: 100%;
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px; 
+    margin-top: 20px;
 
 }
 
@@ -132,7 +138,7 @@ footer nav ul li {
 
 footer nav ul li a {
     display: inline-block;
-    color: #737070	;
+    color: #737070;
     text-decoration: none;
     padding: 0.5rem 0.8rem;
     transition: background-color 1s ease, color 1s ease;
@@ -143,18 +149,23 @@ footer nav ul li a {
 
 
 
+
 /* Contacto */
 
+/* Contacto */
 .contacto {
+    background-color: black;
     width: 100%;
     height: auto;
     padding: 0 2rem 5rem 2rem;
 }
 
-/* Titulo de la sección Contacto */
-.contacto h1 {
+/* Título de la sección de contacto */
+.contacto h2 {
     display: block;
     text-align: center;
+    color: white;
+    font-family: 'Cooper Hewitt';
     font-size: 2.4rem;
     letter-spacing: .1rem;
     padding: 6rem 0 4rem 0;
@@ -163,79 +174,62 @@ footer nav ul li a {
 /* Contenedor principal de contacto */
 .container--contacto {
     width: 100%;
-    background-color: blue;
+    background-color: violet;
     border-radius: 24px;
     padding: 3rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Texto dentro del contenedor */
+/* Contenedor de texto dentro de la sección de contacto */
+.container_text--contacto {
+    width: 100%;
+    text-align: center;
+}
+
 .container_text--contacto p {
     font-size: 1.6rem;
     font-family: 'Cooper Hewitt';
-    color: var(--white);
+    color: white;
     margin-bottom: 3rem;
     letter-spacing: 1px;
     line-height: 2.3rem;
 }
 
-/* Estilo de los campos de input */
-.formcontacto input {
+/* Estilos para los inputs y textarea del formulario */
+.formcontacto input, .formcontacto textarea {
     font-family: 'Cooper Hewitt';
     background: transparent;
-    border: 1px solid lightcoral;
+    border: 1px solid lightgray;
     width: 100%;
     padding: 1rem;
     border-radius: 1rem;
-    color: magenta;
+    color: white;
     font-size: 1.6rem;
     outline: none;
     margin-bottom: 2rem;
     letter-spacing: 1px;
 }
 
-.formcontacto input::placeholder {
-    color: var(--light-grey);
+.formcontacto input::placeholder, .formcontacto textarea::placeholder {
+    color: lightgray;
 }
 
+/* Estilo para textarea */
+.formcontacto textarea {
+    resize: none;
+    height: 10rem;
+}
+
+/* Estilo para inputs inválidos */
 .formcontacto .input-invalid {
     border: 1px solid #574438;
     color: #574438;
 }
 
-/* Estilo de la caja de texto */
-.formcontacto textarea {
-    background: transparent;
-    border: 1px solid purple;
-    font-family: 'Cooper Hewitt';
-    width: 100%;
-    padding: 1rem;
-    border-radius: 1rem;
-    color: pink;
-    font-size: 1.6rem;
-    outline: none;
-    margin-bottom: 3rem;
-    letter-spacing: 1px;
-    resize: none;
-}
-
-.formcontacto textarea::placeholder {
-    color: lawngreen;
-}
-
-.formcontacto textarea::-webkit-scrollbar {
-    width: 8px;
-}
-
-.formcontacto textarea::-webkit-scrollbar-track {
-    background-color: #776254;
-}
-
-.formcontacto textarea::-webkit-scrollbar-thumb {
-    background-color: #574438;
-}
-
-/* Estilo del botón del formulario */
+/* Contenedor del botón de envío */
 .btncontacto {
     display: flex;
     justify-content: center;
@@ -244,32 +238,31 @@ footer nav ul li a {
 .btncontacto button {
     background: #776254;
     border: none;
+    font-family: 'Cooper Hewitt';
     width: 20rem;
     padding: .8rem 1rem;
     border-radius: 1rem;
-    color: var(--white);
+    color: white;
     font-size: 1.8rem;
     letter-spacing: 1px;
     cursor: pointer;
     transition: 1s all;
 }
 
+/* Efecto hover del botón */
 .btncontacto button:hover {
     background: #776254;
-    color: var(--black);
+    color: black;
     font-weight: bold;
     transform: scale(1.1);
-    box-shadow: 0px 9px 15px -1px rgba(0,0,0,0.20);
+    box-shadow: 0px 9px 15px -1px rgba(0, 0, 0, 0.20);
     transition: all .4s ease;
 }
 
+/* Efecto al hacer clic en el botón */
 .btncontacto button:active {
     background: #574438;
 }
-
-
-
-
 
 
 /* Inicio */
@@ -300,8 +293,6 @@ footer nav ul li a {
 }
 
 .Inicio h1 {
-    font-family: 'Cooper Hewitt';
-    color: var(--white);
     font-size: 3rem;
     text-align: center;
     margin-top: 2rem;
@@ -325,16 +316,75 @@ footer nav ul li a {
 }
 
 .saludo p {
-    color: var(--white);
     font-size: 1.6rem;
     letter-spacing: 0.2rem;
     line-height: 1.8rem;
 }
 
+/* Estilos para la sección de proyectos */
+.proyectos {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.proyectos h2 {
+    font-size: 3rem;
+    font-family: 'Cooper Hewitt';
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+/* Contenedor de los proyectos (hace que los cards estén alineados horizontalmente) */
+.cardcontainer {
+    display: flex;
+    justify-content: space-between;  /* Espaciado entre los cards */
+    flex-wrap: wrap; /* Permite que los cards se ajusten si el ancho de pantalla es pequeño */
+    gap: 2rem;  /* Espacio entre los cards */
+    margin-bottom: 2rem;
+}
+
+/* Estilos para cada tarjeta de proyecto */
+.cardcontainer a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    width: calc(50% - 1rem); /* Asegura que cada card ocupe el 50% del contenedor, con espacio entre ellos */
+    max-width: 500px;  /* Limita el tamaño máximo de cada tarjeta */
+}
+
+.cardcontainer button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.cardcontainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;  /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
+/* Estilo para el texto del título del proyecto */
+.cardcontainer h3 {
+    font-family: 'PT Sans', sans-serif;
+    color: var(--white);
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.05rem;
+}
+
+
 /* Animaciones para la imagen */
 @keyframes image {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .slide img {
@@ -343,26 +393,95 @@ footer nav ul li a {
 
 
 
+
+/*sobre mi*/
+.sobremi {
+    padding: 5rem;
+}
+
+.sobremi section {
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sobremi img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.habilidades, .cualidades {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+
+.habilidades div, .cualidades div {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    padding: 3rem;
+    text-align: center; /* Centra el texto dentro de los h3 */
+    width: 100%; /* Asegura que el h3 ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+}
+
+.biografia p {
+    background-color: black;
+    padding: 2rem;
+
+}
+
+
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .sobremi section {
+        grid-template-columns: 1fr;
+        /* En pantallas pequeñas, las columnas se apilan */
+    }
+
+    .biografia {
+        grid-column: 1 / -1;
+        /* En móviles, la biografía ocupa todo el ancho */
+    }
+}
+
+
 @media (min-width: 720px) {
-    nav.menu{
+    nav.menu {
         width: 300px;
     }
 
 }
 
-@media (min-width: 1024px){
-    nav.menu ul li a{
+@media (min-width: 1024px) {
+    nav.menu ul li a {
         font-size: 1.3rem;
-    }   
+    }
 }
+
 @media (min-width: 1322px) {
-    
+
     .menu-toggle {
-        display: none; /* Ocultar el botón en pantallas grandes */
+        display: none;
+        /* Ocultar el botón en pantallas grandes */
     }
 
     nav.menu {
-        display: flex; 
+        display: flex;
         position: static;
         background: none;
         box-shadow: none;
@@ -381,10 +500,10 @@ footer nav ul li a {
     }
 
     nav.menu ul li a {
-    font-size: 1rem;
-    text-decoration: none;
-    color: #737070	;
-    padding: 0.6rem 0.8rem;
-    transition: color 0.3s ease;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #737070;
+        padding: 0.6rem 0.8rem;
+        transition: color 0.3s ease;
     }
 }
