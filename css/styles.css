@@ -64,6 +64,8 @@ header img {
     cursor: pointer;
     z-index: 1000;
     color: #3c3c3c;
+    font-family: 'Cooper Hewitt';
+    font-size: 1rem;
 
 }
 
@@ -383,7 +385,10 @@ footer nav ul li img:hover {
     letter-spacing: 0.05rem;
 }
 
+.cardcontainer:hover {
+    transform: scale(1.2)
 
+}
 
 /*sobre mi*/
 .sobremi {
@@ -435,6 +440,10 @@ h3 {
 
 }
 
+.cards--habilidades:hover, .cards--cualidades:hover{
+    transform: scale(1.5);
+
+}
 
 
 /* Diseño responsivo */
