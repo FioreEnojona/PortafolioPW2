@@ -397,8 +397,8 @@ footer nav ul li img:hover {
 }
 
 .sobremi img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     margin-bottom: 5px;
     display: block;
     margin: 0 auto;
@@ -423,7 +423,7 @@ footer nav ul li img:hover {
 h3 {
     font-size: 1.6rem;
     margin-bottom: 5px;
-    padding: 3rem;
+    padding: 1rem;
     text-align: center; /* Centra el texto dentro de los h3 */
     width: 100%; /* Asegura que el h3 ocupe todo el ancho disponible */
     box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
